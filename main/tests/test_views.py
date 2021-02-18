@@ -19,6 +19,6 @@ class TestPage(TestCase):
     def test_contact_us_page_work(self):
         response = self.client.get(reverse('contact_us'))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'main/contact_form.html')
+        self.assertTemplateUsed(response, 'contact_form.html')
         self.assertContains(response, 'BookTime')
         self.assertIsInstance(response.context["form"], forms.ContactForm)
