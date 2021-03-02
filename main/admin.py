@@ -34,7 +34,7 @@ class ProductImageAdmin(admin.ModelAdmin):
     def thumbnail_tag(self, obj):
         if obj.thumbnail:
             return format_html(
-                '<img src="%s"/>' % obj.thumbnail.url
+                '<img src="%s" height=150 width=150 />' % obj.thumbnail.url
             )
         return "-"
 

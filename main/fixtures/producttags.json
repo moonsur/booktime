@@ -1,0 +1,74 @@
+[
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Novel",
+      "slug": "novel",
+      "description": "This is novel tag",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Romance",
+      "slug": "romance",
+      "description": "dddddddddddddd",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Drama",
+      "slug": "drama",
+      "description": "",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Science Fiction",
+      "slug": "science-fiction",
+      "description": "",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Opensource",
+      "slug": "opensource",
+      "description": "",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Teamwork",
+      "slug": "teamwork",
+      "description": "yyyyyyy",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "Finace",
+      "slug": "finace",
+      "description": "xxxxx",
+      "active": true
+    }
+  },
+  {
+    "model": "main.producttag",
+    "fields": {
+      "name": "IT",
+      "slug": "it",
+      "description": "This is it tag",
+      "active": true
+    }
+  }
+]

@@ -7,18 +7,24 @@ class ActiveManager(models.Manager):
         return self.filter(active=True)
 
 
+class ProductTagManager(models.Manager):
+    def get_by_natural_key(self, slug):
+        return self.get(slug=slug)
+
+
 class ProductTag(models.Model):
     #products = models.ManyToManyField(Product, blank=True)
     name = models.CharField(max_length=40)
     slug = models.SlugField(max_length=48)
     description = models.TextField(blank=True)
     active = models.BooleanField(default=True)
+    objects = ProductTagManager()
 
     def __str__(self):
         return self.name
 
     def natural_key(self):
-        return self.slug
+        return (self.slug,)
 
 
 class Product(models.Model):
