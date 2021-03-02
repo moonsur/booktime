@@ -17,6 +17,8 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         self.stdout.write("Importing Products")
         c = Counter()
+        c['tags_created'] = 0
+        c['products_created'] = 0
         reader = csv.DictReader(options.pop("csvfile"))
         for row in reader:
             product, created = models.Product.objects.get_or_create(
