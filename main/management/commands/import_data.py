@@ -24,7 +24,7 @@ class Command(BaseCommand):
             product, created = models.Product.objects.get_or_create(
                 name=row['name'], price=row['price']
             )
-            product.descripton = row['description']
+            product.description = row['description']
             product.slug = slugify(row['name'])
             for import_tag in row['tags'].split('|'):
                 tag, tag_created = models.ProductTag.objects.get_or_create(
@@ -59,8 +59,8 @@ class Command(BaseCommand):
              #   c["products"], c["products_created"])
         # )
         self.stdout.write(
-            f'Products processed = {c["products"]} (created = c["products_created])')
+            f'Products processed = {c["products"]} (created = {c["products_created"]})')
         self.stdout.write(
-            f'Tags processed = {c["tags"]} (created = c["tags_created])')
+            f'Tags processed = {c["tags"]} (created = {c["tags_created"]})')
         self.stdout.write(
             f'Images processed = {c["images"]}')
