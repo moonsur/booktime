@@ -29,13 +29,21 @@ no">
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == '/contact-us/' %} active {% endif %}"
-                        href="{% url 'contact_us' %}">Contact
-                        us</a>
+                        href="{% url 'contact_us' %}">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/signup/' %} active {% endif %}"
+                        href="{% url 'signup' %}">Signup</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="container">
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}}">
+            {{message}}
+        </div>
+        {% endfor %}
         {% block content %}
         {% endblock content %}
     </main>

@@ -26,7 +26,7 @@ SECRET_KEY = '@zbz64bx!ocvqjlx&nha%=ihejnra2hm^wlpip)s!dfa1@l2l4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'booktime.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'booktime_db.sqlite3',
     }
 }
 
@@ -129,7 +130,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-if not DEBUG:
+if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST_USER = "maksuda.python@gmail.com"
     EMAIL_HOST = 'smtp.gmail.com'
@@ -140,3 +141,6 @@ else:
     EMAIL_BACKEND = (
         "django.core.mail.backends.console.EmailBackend"
     )
+
+# User model set
+AUTH_USER_MODEL = "main.User"
