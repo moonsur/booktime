@@ -1,0 +1,13 @@
+.quantity-number {
+    -moz-appearance:textfield;
+    width: 50px;
+    display: inline-block;
+    }
+.quantity-number::-webkit-inner-spin-button,
+.quantity-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    }
+  

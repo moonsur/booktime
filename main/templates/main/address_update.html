@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Address
+{% endblock title %}
+
+
+{% block content %}
+    <h2>Update Address:</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group {% if form.name.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_name">{{ form.name.label }}</label>
+            <input type="name" class="form-control" id="id_name" name="name" value="{{ form.name.value | default:'' }}">
+            {% if form.name.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.name.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.address1.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_address1">{{ form.address1.label }}</label>
+            <input type="text" class="form-control" id="id_address1" name="address1" value="{{ form.address1.value | default:'' }}">
+            {% if form.address1.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.address1.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.address2.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_address2">{{ form.address2.label }}</label>
+            <input type="text" class="form-control" id="id_address2" name="address2" value="{{ form.address2.value | default:'' }}">
+            {% if form.address2.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.address2.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.zip_code.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_zip_code">{{ form.zip_code.label }}</label>
+            <input type="text" class="form-control" id="id_zip_code" name="zip_code" value="{{ form.zip_code.value | default:'' }}">
+            {% if form.zip_code.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.zip_code.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.city.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_city">{{ form.city.label }}</label>
+            <input type="text" class="form-control" id="id_city" name="city" value="{{ form.city.value | default:'' }}">
+            {% if form.city.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.city.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.country.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_country">{{ form.country.label }}</label>
+           <!--  {{ form.countryee }} -->
+                
+             <select class="form-control" name="country" id="id_country">
+                {% for option in form.country %}
+                  {{option}} 
+             {% endfor %}
+             </select>
+             
+                        
+            {% if form.country.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.country.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+{% endblock content %}
+    
+    

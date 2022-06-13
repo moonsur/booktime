@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    address selection
+{% endblock title %}
+
+
+{% block content %}
+    <h2>Please select billing and shipping address</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group {% if form.billing_address.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_billing_address">{{ form.billing_address.label }}</label>
+           <!--  {{ form.countryee }} -->
+                
+             <select class="form-control" required name="billing_address" id="id_billing_address">
+                {% for option in form.billing_address %}
+                  {{option}} 
+             {% endfor %}
+             </select>
+             
+                        
+            {% if form.billing_address.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.billing_address.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group {% if form.shipping_address.errors %} has-error has-feedback {% endif %}">
+            <label class="col-sm-2 control-label" for="id_shipping_address">{{ form.shipping_address.label }}</label>
+           <!--  {{ form.countryee }} -->
+                
+             <select class="form-control" required
+              name="shipping_address" id="id_shipping_address">
+                {% for option in form.shipping_address %}
+                  {{option}} 
+             {% endfor %}
+             </select>
+             
+                        
+            {% if form.shipping_address.errors %}
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <div class="alert alert-danger">
+                    {{ form.shipping_address.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-primary" href="{% url 'address_create'%}">Add New Address</a>
+    </form>
+{% endblock content %}
+    
+    

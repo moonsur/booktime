@@ -1,0 +1,65 @@
+[
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Machine Learning",
+    "slug": "machine-learning",
+    "description": "Machine Learning",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "AI",
+    "slug": "ai",
+    "description": "Artificial Inteligence",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "SCI FI",
+    "slug": "sci-fi",
+    "description": "Science Fiction",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Self Development",
+    "slug": "self-development",
+    "description": "Self Development",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Programming",
+    "slug": "programming",
+    "description": "Computer Programming",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Machine Learning",
+    "slug": "machine-learning",
+    "description": "Machine Learning",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Data Science",
+    "slug": "data-science",
+    "description": "Data Science",
+    "active": true
+  }
+}
+]

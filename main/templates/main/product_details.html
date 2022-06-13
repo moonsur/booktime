@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        
+<h1>Details Information:</h1>
+<table class="table">
+    <tr>
+        <th>Name</th>        
+        <td>{{ object.name }}</td>        
+    </tr>
+    <tr>
+        <th>Cover Images</th>       
+        <td>
+            
+            {% for image in object.productimage_set.all %}
+                <img height="300" width="250" src="{{ image.thumbnail.url }}" alt="Cover">
+            {% endfor %}
+                
+        </td>        
+    </tr>
+    <tr>
+        <th>Price</th>        
+        <td>{{ object.price }}</td>        
+    </tr>
+    <tr>
+        <th>Description</th>        
+        <td>{{ object.description | linebreaks }}</td>        
+    </tr>
+    <tr>
+        <th>Tags</th>        
+        <td>{{ object.tags.all | join:", " | default:"No Tags Available" }}</td>        
+    </tr>
+    <tr>
+        <th>In Stock</th>      
+        <td>{{ object.in_stock | yesno | capfirst }}</td>
+    </tr>
+    <tr>
+        <th>Date Updated</th>
+        <td>{{ object.date_updated | date:"D, d M, Y" }}</td>
+    </tr>
+</table>
+
+<a href="{% url 'add_to_basket'%}?product_id={{ object.id }}">Add to basket</a>
+
+{% endblock content %}

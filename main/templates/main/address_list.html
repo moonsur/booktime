@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Address
+{% endblock title %}
+
+
+{% block content %}
+    <h2>Address List :</h2>
+    
+    
+   
+
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>Zip code</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            {% for address in address_list %}
+            <tr>
+                <td>{{address.name}}</td>
+                <td>{{address.address1}}</td>
+                <td>{{address.address2}}</td>
+                <td>{{address.zip_code}}</td>
+                <td>{{address.city}}</td>
+                <td>{{address.get_country_display}}</td>
+                <td><a href="{% url 'address_update' address.id %}"><span class="glyphicon glyphicon-edit"></span> </a></td>
+                <td><a href="{% url 'address_delete' address.id %}"><span class="glyphicon glyphicon-trash"></span> </a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{% url 'address_create' %}" class="btn btn-primary">Add New Address</a>
+      
+            
+    
+
+
+{% endblock content %}
+    
+    

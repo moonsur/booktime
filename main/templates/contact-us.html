@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block title  %}
+    Contact Us
+{% endblock title %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-xs-12">
+        <h2>Contact Us</h2>
+        <p>Please fill the following fields </p>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group {% if form.name.errors %} has-error has-feedback {% endif %}">                
+                <label for="id_name" class="col-sm-2 control-label">{{ form.name.label }}</label>
+                <input class="form-control " id="id_name" name="name" type="text" placeholder="Enter your name" value="{{ form.name.value|default:'' }}">
+                {% if form.name.errors %}
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    <div class="alert alert-danger">
+                        {{ form.name.errors }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="form-group {% if form.message.errors %} has-error has-feedback {% endif %}">                
+                <label for="id_message" class="col-sm-2 control-label">{{ form.message.label }}</label>
+                <textarea name="message" id="id_message" cols="30" rows="10" class="form-control " placeholder="Wrtie your message">
+                    {{ form.message.value|default:'' }}
+                </textarea>
+                {% if form.message.errors %} 
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>               
+                    <div class="alert alert-danger">
+                        {{ form.message.errors }}
+                    </div>
+                {% endif %}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+   
+{% endblock content %}
+    
+    

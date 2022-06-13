@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>
+        
+        {% block title %}
+            
+        {% endblock title %}
+            
+    </title>
+
+</head>
+
+<body>
+<div class="container">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Booktime</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="{% if request.path == '/' %}active {% endif %}"><a href="/">Home</a></li>
+            <li class="{% if request.path == '/about-us/' %}active {% endif %}"><a href="/about-us/">About Us</a></li>
+            <li class="{% if request.path == '/contact-us/' %} active {% endif %}"><a href="{% url 'contact-us' %}">Contact Us</a></li>
+           <li class="{% if request.path == '/products/' %} active {% endif %}"><a href="{% url 'products' tag='All' %}">Products</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+            <li class="{% if request.path == '/address/' %} active {% endif %}"> <a href="{% url 'address_list' %}">Address</a></li>      
+            <li class="loggedin-info"> <span> You have Logged in as {{ user.email }}</span></li>      
+            <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </nav>
+      
+      {% for message in messages %}
+      <div class="alert alert-{{message.tags}}">{{ message }}</div>        
+      {% endfor %}
+      
+      {% if request.basket %}
+        <div>
+          <a href="{% url 'basket' %}">{{ request.basket.count }} items in basket</a>
+        </div>
+
+      {% endif %}
+
+{% block content %}
+    
+{% endblock content %}
+    
+</div>
+{% include 'footer.html' %}
+<!-- JavaScript Bundle with Popper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+{% block js %}
+  
+  {% if formset %}
+    {{ formset.media }}
+  {% endif %}
+    
+{% endblock js %}
+  
+</body>
+
+</html>

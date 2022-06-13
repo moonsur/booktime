@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Address
+{% endblock title %}
+
+
+{% block content %}
+    <h2>Delete Address</h2>
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you confirm to delete this address?</p>
+        <button class="btn btn-primary" type="submit">Confirm</button>
+        <a class="btn btn-primary" href="{% url 'address_list' %}">Cancel</a>
+    </form>
+{% endblock content %}
+    
+    

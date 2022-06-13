@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Basket
+{% endblock title %}
+
+{% block content %}
+    <h2>Basket</h2>
+    {% if formset %}
+        <p>You can update your basket here.</p>
+        <form method="POST">
+            {% csrf_token %}               
+            {{ formset.management_form }}
+            
+            {% for form in formset %}
+                <p class="basket-update">
+                    {{ form.instance.product.name }}
+                    {{ form }} 
+                </p>          
+            {% endfor %}
+                
+            <button type="submit" class="btn btn-primary">Update</button> 
+            
+            {% if user.is_authenticated %}
+                <a class="btn btn-primary" href="{% url 'address_selection' %}">Place Order</a>
+            {% else %}
+                <a class="btn btn-primary" href="{% url 'signup' %}">Signup</a>
+                <a class="btn btn-primary" href="{% url 'login' %}">Login</a>
+            {% endif %}
+                  
+        </form>
+    {% else %}
+        
+        <p>You have not items in the basket</p>    
+    {% endif %}
+{% endblock content %}
+        
