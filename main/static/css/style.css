@@ -53,3 +53,8 @@ html, body {
 .basket-update button[type=button]:focus {
     outline:none;
   } 
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+    max-height: 500px;
+    width: 100%;
+  }

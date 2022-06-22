@@ -1,0 +1,1 @@
+manage.py import_data C:\Users\monsu\booktime\booktime\main\fixtures\products.csv C:\Users\monsu\booktime\booktime\main\fixtures\product-images

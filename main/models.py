@@ -37,6 +37,7 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     slug = models.SlugField(max_length=50)
+    author = models.CharField(max_length=60, default='Unknown')
     active = models.BooleanField(default=True)
     in_stock = models.BooleanField(default=True)
     date_updated = models.DateTimeField(auto_now=True)
@@ -244,3 +245,30 @@ class OrderLine(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='lines')
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     status = models.IntegerField(choices=STATUSES, default=NEW)
+
+
+class SingleFirstSlideModel(models.Model):
+    first_slide = models.BooleanField(default=False)
+
+    class Meta:
+        abstract = True
+
+    def save(self, *args, **kwargs):
+        if self.first_slide:
+            # select all other active items
+            qs = type(self).objects.filter(first_slide=True)
+            # except self (if self already exists)
+            if self.pk:
+                qs = qs.exclude(pk=self.pk)
+            # and deactive them
+            qs.update(first_slide=False) 
+
+        super(SingleFirstSlideModel, self).save(*args, **kwargs)
+
+class HomeSlider(SingleFirstSlideModel):
+    image = models.ImageField(upload_to='home-sliders') 
+    alt_text = models.CharField(max_length=20)
+    caption_header = models.CharField(max_length=30)  
+    caption_text = models.CharField(max_length=60)  
+    active = models.BooleanField(default=True)
+    

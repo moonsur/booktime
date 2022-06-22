@@ -7,6 +7,9 @@ from django.views.generic.list import ListView
 from django.shortcuts import get_object_or_404, render
 from main import forms, models
 import logging
+from django.contrib.auth import authenticate, login, get_user_model
+from django.contrib import messages
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -37,7 +40,7 @@ def contact_us(request):
 class ProductListView(ListView):
    # logger.info('Product List view')
     template_name = "main/product_list.html"
-    paginate_by = 2
+    paginate_by = 5
 
     def get_queryset(self):
         tag = self.kwargs['tag']
@@ -57,9 +60,7 @@ def about_us_View(request):
     return render(request, 'about-us.html', {'about':aboutus})
 
 
-from django.contrib.auth import authenticate, login, get_user_model
-from django.contrib import messages
-from . import forms
+
 
 User = get_user_model()
 

@@ -22,11 +22,13 @@ class Command(BaseCommand):
             ) 
             product.description = row['description']
             product.slug = slugify(row['name'])
+            product.author = row['author']
             for product_tag in row['tags'].split('|'):
                 tag, tag_created = models.ProductTag.objects.get_or_create(
                     name = product_tag,
                     slug = slugify(product_tag)
                 )
+                product.tags.add(tag)
                 c['tags'] += 1
                 if tag_created:
                     c['tags_created'] +=1

@@ -1,4 +1,161 @@
-name,description,tags,image_filename,price
-The cathedral and the bazaar,A book about open source methodologies,Open source|Programming,cathedral.jpg,7
-cathedral-Siddhartha,A novel by Hermann Hesse,Religion|Narrative,siddhartha.jpg,6
-Backgammon for dummies,How to start playing Backgammon,Games|Manual,backgammon.jpeg,13
+name,description,tags,image_filename,price,author
+Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones,"No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",Self Development | Personal Transformation | Self-Help,Atomic Habits.jpg,11,James Clear
+The Four Agreements: A Practical Guide to Personal Freedom,"In The Four Agreements, bestselling author don Miguel Ruiz reveals the source of self-limiting beliefs that rob us of joy and create needless suffering. Based on ancient Toltec wisdom, The Four Agreements offer a powerful code of conduct that can rapidly transform our lives to a new experience of freedom, true happiness, and love.",Self Development | Motivational  | Self-Help,The Four Agreements.jpg,10,Don Miguel Ruiz
+The Power of One More: The Ultimate Guide to Happiness and Success,"<p>In The Power of One More, renowned keynote speaker and performance expert Ed Mylett draws on 30 years of experience as an entrepreneur and coach to top athletes, entertainers, and business executives to reveal powerful strategies to help you live an extraordinary ""one more"" life.</p>
+
+<h4>In The Power of One More, you'll:</h4>
+<ul>
+<li>Learn why you're closer to your dreams and goals than you think and why using The Power of One More strategies will help you cross the finish line in whatever race you're running</li>
+<li>Understand the psychology and science of how to use The Power of One More in every part of your life to help you solve problems and achieve levels of success you never thought possible</li>
+<li>Discover time-tested and unique solutions to challenges that will remove the mental roadblocks you've been battling for years</li>
+<li>Perfect for anyone who wants more bliss, wealth, or better relationships, The Power of One More is an indispensable roadmap to realizing and exceeding your personal and professional goals by tapping into the superpowers and gifts you already have inside you.</li>
+</ul>",Self Development | Motivational  | Self-Help,The Power of One More.jpg,17,Ed Mylett
+The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life,"<p>In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be ""positive"" all the time so that we can truly become better, happier people.</p>
+
+<p>For decades, we’ve been told that positive thinking is the key to a happy, rich life. ""F**k positivity,"" Mark Manson says. ""Let’s be honest, shit is f**ked and we have to live with it."" In his wildly popular Internet blog, Manson doesn’t sugarcoat or equivocate. He tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let’s-all-feel-good mindset that has infected modern society and spoiled a generation, rewarding them with gold medals just for showing up.</p>
+
+<p>Manson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons better. Human beings are flawed and limited—""not everybody can be extraordinary, there are winners and losers in society, and some of it is not fair or your fault."" Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek.</p>
+
+<p>There are only so many things we can give a f**k about so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F**k is a refreshing slap for a generation to help them lead contented, grounded lives.</p>",Self Development | Motivational  | Self-Help,The Subtle Art of Not Giving.jpg,12,Mark Manson
+Make Your Bed: Little Things That Can Change Your Life...And Maybe the World,"<p>On May 17, 2014, Admiral William H. McRaven addressed the graduating class of the University of Texas at Austin on their Commencement day. Taking inspiration from the university's slogan, ""What starts here changes the world,"" he shared the ten principles he learned during Navy Seal training that helped him overcome challenges not only in his training and long Naval career, but also throughout his life; and he explained how anyone can use these basic lessons to change themselves-and the world-for the better.</p>
+
+<p>Admiral McRaven's original speech went viral with over 10 million views. Building on the core tenets laid out in his speech, McRaven now recounts tales from his own life and from those of people he encountered during his military service who dealt with hardship and made tough decisions with determination, compassion, honor, and courage. Told with great humility and optimism, this timeless book provides simple wisdom, practical advice, and words of encouragement that will inspire readers to achieve more, even in life's darkest moments.</p>",Self Development | Motivational  | Self-Help,Make Your Bed.jpg,13,Admiral William H. McRaven
+The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are,"<p>Brené Brown’s game-changing New York Times bestseller, The Gifts of Imperfection, has sold more than 2 million copies in more than 30 different languages and is celebrating its 10th Anniversary in print. Forbes magazine named Gifts one of the ""Five Books That Will Actually Change Your Outlook On Life."" Through this self-help classicwe find courage to overcome paralyzing fear and self-consciousness, strengthening our connection to the world and helping us to believe we are worthy of self-discovery, personal growth, and boundless love.</p>
+
+<p>A motivational and inspiring guide to wholehearted living, rather than just the average self-help book, with this groundbreaking work Brené Brown, Ph.D., bolsters the self-esteem and personal development process through her characteristic heartfelt, honest storytelling. With original research and plenty of encouragement, she explores the psychology of releasing our definitions of an “imperfect” life and embracing living authentically. Brown’s “ten guideposts”  are benchmarks for authenticity that can help anyone establish a practice for a life of honest beauty—a perfectly imperfect life.</p>
+
+<p>Now more than ever, we all need to cultivate feelings of self-worth, as well as acceptance and love for ourselves. In a world where insults, criticisms, and fears are spread too generously alongside messages of unrealistic beauty, attainment, and expectation, we look for ways to “dig deep” and find truth and gratitude in our lives. A new way forward means we can’t hold on too tightly to our own self-defeating thoughts or the displaced pain in our world. Instead, we can embrace the imperfection.</p>",Self Development | Creativity | Self-Help,The Gifts of Imperfection.jpg,8,Brené Brown
+The War of Art: Break Through the Blocks and Win Your Inner Creative Battles,"<p>A succinct, engaging, and practical guide for succeeding in any creative sphere, The War of Art is nothing less than Sun-Tzu for the soul.</p>
+
+<p>What keeps so many of us from doing what we long to do?</p>
+
+<p>Why is there a naysayer within? How can we avoid the roadblocks of any creative endeavor—be it starting up a dream business venture, writing a novel, or painting a masterpiece?</p>
+
+<p>Bestselling novelist Steven Pressfield identifies the enemy that every one of us must face, outlines a battle plan to conquer this internal foe, then pinpoints just how to achieve the greatest success.</p>
+
+<p>The War of Art emphasizes the resolve needed to recognize and overcome the obstacles of ambition and then effectively shows how to reach the highest level of creative discipline.</p>
+
+<p>Think of it as tough love . . . for yourself.</p>
+
+<p>Whether an artist, writer or business person, this simple, personal, and no-nonsense book will inspire you to seize the potential of your life.</p>",Self Development | Creativity | Self-Help,The War of Art.jpg,11,Steven Pressfield
+Tiny Habits: The Small Changes That Change Everything,"<p>New York Times Bestseller | A habit expert from Stanford University shares his breakthrough method for building habits quickly and easily. With Tiny Habits you’ll increase productivity by tapping into positive emotions to create a happier and healthier life. Dr. Fogg’s new and extremely practical method picks up where Atomic Habits left off. </p>
+
+
+<p>“There are many great books on the topic [of habits]: The Power of Habit, Atomic Habits, but this offers the most comprehensive, practical, simple, and compassionate method I've ever come across.” —John Stepper, Goodreads user</p>
+
+
+<p>BJ FOGG is here to change your life—and revolutionize how we think about human behavior. Based on twenty years of research and Fogg’s experience coaching more than 40,000 people, Tiny Habits cracks the code of habit formation. With breakthrough discoveries in every chapter, you’ll learn the simplest proven ways to transform your life. Fogg shows you how to feel good about your successes instead of bad about your failures. </p>
+
+
+<p>This proven, step-by-step guide will help you design habits and make them stick through positive emotion and celebrating small successes. Whether you want to lose weight, de-stress, sleep better, or be more productive each day, Tiny Habits makes it easy to achieve—by starting small.</p>",Self Development | Time Management | Self-Help,Tiny Habits.jpg,13, BJ Fogg
+The 5AM Club: Own Your Morning. Elevate Your Life,"<p>Legendary leadership and elite performance expert Robin Sharma introduced The 5am Club concept more than 20 years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity.</p>
+
+<p>Now, in this life-changing guide, handcrafted by the author over a rigorous four-year period, you will discover the early-rising habit that has helped so many accomplish epic results while upgrading their happiness, helpfulness, and feelings of aliveness.</p>
+
+<p>Through an enchanting - and often amusing - story about two struggling strangers who meet an eccentric tycoon who becomes their secret mentor, The 5am Club will walk you through:</p>
+<ul>
+<li>How great geniuses, business titans and the world’s wisest people start their mornings to produce astonishing achievements</li>
+<li>A little-known formula you can use instantly to wake up early feeling inspired, focused, and flooded with a fiery drive to get the most out of each day</li>
+<li>A step-by-step method to protect the quietest hours of daybreak so you have time for exercise, self-renewal, and personal growth</li>
+<li>A neuroscience-based practice proven to help make it easy to rise while most people are sleeping, giving you precious time for yourself to think, express your creativity, and begin the day peacefully instead of being rushed</li>
+<li>“Insider-only” tactics to defend your gifts, talents, and dreams against digital distraction and trivial diversions so you enjoy fortune, influence, and a magnificent impact on the world</li>
+<li>Part manifesto for mastery, part playbook for genius-grade productivity and part companion for a life lived beautifully, The 5am Club is a work that will transform your life. Forever.</li>
+</ul>",Self Development | Time Management | Self-Help,The 5AM Club.jpg,12,Robin Sharma
+"Becoming the One: Heal Your Past, Transform Your Relationship Patterns, and Come Home to Yourself","<p>Romantic relationships have the ability to infuse our lives with the magic of intimacy and connection. But for many of us, that magic is fleeting—over and over, our relationships don't last, or if they do, they fail to make us happy. We find ourselves chasing unavailable love, sublimating our needs in service to others, or trying to save our partners from themselves, all the while abandoning the one who needs us most—ourselves.</p>
+
+<p>If you find yourself struggling to let go after a relationship ends, or you keep hitting the same wall in dating and relationships with emotionally unavailable people, this is not a sign that you are broken. It is a sign that somewhere along the way, you learned to sacrifice yourself in order to be loved. In Becoming the One, spiritual leader and visionary founder of the Rising Woman community Sheleana Aiyana offers a road map for transforming your relationship patterns to end the cycle of self-abandonment and move into the light of self-discovery.</p>",Self Development | Happiness  | Self-Help,Becoming the One.jpg,9,Sheleana Aiyana
+"Happy Mind, Happy Life: The New Science of Mental Wellbeing","<p>During his twenty years as a GP, Dr. Rangan Chatterjee, author of the international bestseller Feel Better in 5, has seen first-hand that motivation isn't always enough for us to maintain a healthy lifestyle. It's only when we learn how to support our own mental wellbeing and cultivate core happiness that these choices become easy.</p>
+
+<p>In Happy Mind, Happy Life, Dr. Chatterjee shares cutting-edge insights into the science of happiness and reveals ten simple ways to put you back in control of your health. It features real-life case studies and more than twenty practical exercises</p>",Self Development | Happiness  | Self-Help,Happy Mind - Happy Life.jpg,13,Dr. Rangan Chatterjee
+"Limitless: Upgrade Your Brain, Learn Anything Faster, and Unlock Your Exceptional Life","<p>Your brain is like a supercomputer and your thoughts program it to run. That's why the Kwik Brain process starts with unmasking assumptions, habits, and procrastinations that stifle you, redrawing the borders and boundaries of what you think is possible. It teaches you how to identify what you want in every aspect of your life, so you can move from negative thinking to positive possibilities.</p>
+
+<h4>IGNITE YOUR MOTIVATION</h4>
+
+<p>Uncovering what motivates you is the key that opens up limitless mental capacity. This is where Passion + Purpose + Energy meet to move you closer to your goals, while staying focused and clear. Your personal excitement will be sustainable with self-renewing inspirations. Your mind starts strong, stays strong, and drives further exponentially faster.</p>
+
+<h4>MASTER THE METHOD</h4>
+
+<p>We've applied the latest neuroscience for accelerated learning. Our process, programs, podcasts, and products unleash your brain's own superpowers. Finish a book three times faster through speed reading (and remember every part of it), learn a new language in record time, and master new skills with ease. These are just a few of the life-changing self-help benefits. With Kwik Brain, you'll get brain-fit and level-up your mental performance.</p>
+
+<p>With the best Mindset, Motivation and Method, your powers become truly limitless.
+
+<p>Audiobook exclusive! At the end of nearly every chapter in the audio edition of Limitless, Jim Kwik is joined by speaker and performer Mia Lux, host of The Conscious-Ish Show, for an audiobook-exclusive interview. These unscripted conversations range widely, exploring the key ideas of the chapter, sharing personal thoughts and insights, and shedding light on how the principles of Limitless work in real scenarios - including many from Jim's own life. </p>",Self Development | Memory Improvement  | Self-Help,Limitless.jpg,11,Jim Kwik
+Stolen Focus: Why You Can't Pay Attention - and How to Think Deeply Again,"<p>In the United States, teenagers can focus on one task for only 65 seconds at a time, and office workers average only three minutes. Like so many of us, Johann Hari was finding that constantly switching from device to device and tab to tab was a diminishing and depressing way to live. He tried all sorts of self-help solutions - even abandoning his phone for three months - but nothing seemed to work. So Hari went on an epic journey across the world to interview the leading experts on human attention - and he discovered that everything we think we know about this crisis is wrong.</p>
+
+<p>We think our inability to focus is a personal failure to exert enough willpower over our devices. The truth is even more disturbing: Our focus has been stolen by powerful external forces that have left us uniquely vulnerable to corporations determined to raid our attention for profit. Hari found that there are 12 deep causes of this crisis, from the decline of mind-wandering to rising pollution, all of which have robbed some of our attention. In Stolen Focus, he introduces listeners to Silicon Valley dissidents who learned to hack human attention, and veterinarians who diagnose dogs with ADHD. He explores a favela in Rio de Janeiro where everyone lost their attention in a particularly surreal way, and an office in New Zealand that discovered a remarkable technique to restore workers’ productivity.</p>
+
+<p>Crucially, Hari learned how we can reclaim our focus - as individuals, and as a society - if we are determined to fight for it. Stolen Focus will transform the debate about attention and finally show us how to get it back.</p>",Self Development | Memory Improvement  | Self-Help,Stolen Focus.jpg,14,Johann Hari
+Keep Sharp: Build a Better Brain at Any Age,"<p>Keep your brain young, healthy, and sharp with this science-driven guide to protecting your mind from decline by neurosurgeon and CNN chief medical correspondent Dr. Sanjay Gupta.</p>
+
+<p>Throughout our life, we look for ways to keep our minds sharp and effortlessly productive. Now, globetrotting neurosurgeon Dr. Sanjay Gupta offers “the book all of us need, young and old” (Walter Isaacson, #1 New York Times bestselling author of The Code Breaker) with insights from top scientists all over the world, whose cutting-edge research can help you heighten and protect brain function and maintain cognitive health at any age.</p>
+
+<p>Keep Sharp debunks common myths about aging and mental decline, explores whether there’s a “best” diet or exercise regimen for the brain, and explains whether it’s healthier to play video games that test memory and processing speed, or to engage in more social interaction. Discover what we can learn from “super-brained” people who are in their eighties and nineties with no signs of slowing down—and whether there are truly any benefits to drugs, supplements, and vitamins. Dr. Gupta also addresses brain disease, particularly Alzheimer’s, answers all your questions about the signs and symptoms, and shows how to ward against it and stay healthy while caring for a partner in cognitive decline. He likewise provides you with a personalized twelve-week program featuring practical strategies to strengthen your brain every day.</p>
+
+<p>Keep Sharp is the “must-read owner’s manual” (Arianna Huffington) you’ll need to keep your brain young and healthy regardless of your age!</p>",Self Development | Memory Improvement  | Self-Help,Keep Sharp.jpg,13,Sanjay Gupta M.D.
+Finding Me: A Memoir,"<p>In my book, you will meet a little girl named Viola who ran from her past until she made a life-changing decision to stop running forever.</p>
+
+<p>This is my story, from a crumbling apartment in Central Falls, Rhode Island, to the stage in New York City, and beyond. This is the path I took to finding my purpose but also my voice in a world that didn’t always see me.</p>
+
+<p>As I wrote Finding Me, my eyes were open to the truth of how our stories are often not given close examination. We are forced to reinvent them to fit into a crazy, competitive, judgmental world. So I wrote this for anyone running through life untethered, desperate and clawing their way through murky memories, trying to get to some form of self-love. For anyone who needs reminding that a life worth living can only be born from radical honesty and the courage to shed facades and be . . . you.</p>
+
+<p>Finding Me is a deep reflection, a promise, and a love letter of sorts to self. My hope is that my story will inspire you to light up your own life with creative expression and rediscover who you were before the world put a label on you.</p>",Self Development | Self-Esteem  | Self-Help,Finding Me.jpg,15,Viola Davis
+Master Your Emotions: A Practical Guide to Overcome Negativity and Better Manage Your Feelings,"<p>The author was an introvert whose shyness kept him from getting the results in life he wanted. When he decided to devote his life to betterment, everything changed. This is his story and how he found joy.</p>
+
+<p>It will be the blueprint for your transformation, too.</p>
+
+<p>You’ll love this practical, no frills program, because the results are easy to achieve once you’ve decided to Master Your Emotions.</p>",Self Development | Self-Esteem  | Self-Help | Emotion,Master Your Emotions.jpg,19,thibaut meurisse 
+The Little Black Book of Workout Motivation,"<p>Let’s face it: fitness is hard.</p>
+
+<p>Have you ever gotten into the car after a long day at work and headed straight for the couch instead of the gym?</p>
+
+<p>Have you ever been unable to stop hitting the snooze button in the morning?</p>
+
+<p>Have you even felt secretly afraid you just don’t have what it takes to transform your body and health?</p>
+
+<p>Welcome to the club.</p>
+
+<p>Working out and eating right takes time, energy, effort, discipline, dedication, and patience, and life always finds ways to interfere with our intentions and tempt us to stray.</p>
+
+<p>And here’s the ground truth:</p>
+
+<p>It doesn’t ever get easier - we just have to get better. And this book will help you get better.</p>
+
+<p>It contains practical scientific research, compelling stories, and time-proven tactics for overcoming the mental and emotional blocks that bring you down and spin you around.</p>",Self Development | Health | Self-Help,The Little Black Book of Workout Motivation.jpg,8,Michael Matthews
+"Healthy Living: 30 Powerful Daily Habits to Transform Your Health, Lose Weight & Radiate Happiness","<p>You’re reading this description because you’re looking for a solution. You’ve tried to fix your life with countless other methods that promise you the entire world but then, sadly, deliver absolutely nothing.</p>
+
+<p>You’ve wasted months of your life trying to get your head around complicated and time consuming solution, thrown more money at it than you care to admit to, and worst still you are close to giving up hope. You’ll never feel bursting with energy, never again fit into your favorite pants, never feel as happy as you really deserve and never live the life of your dreams. But you’re not the kind of person to give up without a fight, are you? You’re not the kind of person to settle for second best in anything, far from it in fact. For that very reason you’re willing to give it one final attempt before you throw your life on the scrap heap.</p>
+
+<p>This book is your answer. Inside you will discover 30 simple daily habits that will transform your life and achieve all of those things you ever wished for. Each habit is easy to comprehend and easier still to implement, and I promise that you won’t be disappointed with the changes you witness in your life.</p>
+
+<p>And the best news of all is that it won’t take months of your life, hundreds of dollars or demand that you give up everything you love. It just takes you, your focus and a willingness to make these positive changes.</p>
+
+<p>So who do you want to become? Which of your dreams would you most like to come true? Read this book and you will discover exactly how to make this all happen.</p>",Self Development | Health | Self-Help,Healthy Living.jpg,6,Carmen Reeves
+Love Yourself & Lose Weight: The Success Story of Self Love,"<h4>WANT A NEW APPROACH TO WEIGHT LOSS?</h4>
+<p>Diets not working for you? Feeling fed up? This book is for anyone who wants to make a change in their lives.</p>
+
+<h4>DIETS ALONE DON’T WORK</h4>
+
+<p>There’s a reason restrictive diets and strict exercise regimes don’t work. Technically, any regime will work if you can ‘stick at it’, but sticking at it is hard. To make a big change we need to change our mindset first.</p>
+
+<h4>THIS IS A REVOLUTIONARY NEW WEIGHT LOSS METHOD</h4>
+
+<p>To do what’s necessary to shift weight via any diet or exercise regime, first you have to fix your relationship with you. Love Yourself & Lose Weight offers a revolutionary and visionary approach to weight loss that’s not about the food you eat or the calories you burn, no, it’s simply all about you.</p>
+
+<p>If you don’t accept, like, and love yourself, you’re missing a key ingredient to any weight loss regime - you're missing what you need to make the change. Without self love, the chances are stacked against you and it’s more likely that whatever you try will fail.</p>
+
+<h4>SELF LOVE IS THE KEY</h4>
+
+<p>What if learning to absolutely love yourself could be the key?</p>
+
+<p>“With self-love on my side I lost over 85 pounds forever. I’m sharing my secrets of self-love to help you lose weight too. If I can do it, anyone can!”</p>
+
+<h4>A TRANSFORMATIONAL STORY</h4>
+
+<p>This is the success story of self-love. Katie shares her personal, funny and inspirational story of how she found and harnessed self-love to achieve massive and permanent weight loss.</p>
+
+<p>At the age of 38, Katie was 85 pounds overweight and miserable about it. She didn’t want to wake up feeling disappointed anymore, she knew she needed a change and she knew diets had never worked. A year and a half later, having discovered the power of self-love, she had lost over 85 pounds, changed her shape, and changed her outlook on pretty much everything.</p>
+
+<h4>THE POWER OF SELF LOVE</h4>
+
+<p>This book explains the psychology and power of self-love as a catalyst for weight loss. Instead of achieving self-love as a result of weight loss, Love Yourself & Lose Weight helps readers to achieve self-love today! Loving yourself today, whatever weight you are, will enable you to eat consciously, move your body, delight in your weight loss journey, and feel great about being you.</p>",Self Development | Health | Self-Help,Love Yourself & Lose Weight.jpg,14,Katie Lips
+Awaken the Giant Within - Winner Walking,"Wake up and take control of your life! From the bestselling author of Inner Strength, Unlimited Power, and MONEY Master the Game, Anthony Robbins, the nation's leader in the science of peak performance, shows you his most effective strategies and techniques for mastering your emotions, your body, your relationships, your finances, and your life.",Self Development,Awaken the Giant.jpg,10,anthony robbins
