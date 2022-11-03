@@ -10,39 +10,31 @@
 {% load static %}
 <div class="row">
     <div class="col-xs-12">
+       
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+                {% for slide in slider %}
+              <li data-target="#myCarousel" data-slide-to="{{ forloop.counter |add:'-1' }}" 
+              class="{% if slide.first_slide %} active {% endif %}"></li>             
+              {% endfor %}
             </ol>
           
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <img src="{% static 'images/sincerely-media.jpg' %}" alt="Los Angeles">
+            {% for slide in slider %} 
+              <div class="item {% if slide.first_slide %} active {% endif %}">
+                <img src="{{ slide.image.url }}" alt="{{ slide.alt_text }}">
                 <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
+                  <blockquote>
+                    <p>{{ slide.caption_text }}</p>
+                    <footer class="color-blue">{{ slide.quoted_by }}</footer>
+                  </blockquote>
+                   
                   </div>
               </div>
-          
-              <div class="item">
-                <img src="{% static 'images/daria-nepriakhina.jpg' %}" alt="Chicago">
-                <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
-                  </div>
-              </div>
-          
-              <div class="item">
-                <img src="{% static 'images/mikolaj.jpg' %}" alt="New York">
-                <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
-                  </div>
-              </div>
+              {% endfor %} 
+              
             </div>
           
             <!-- Left and right controls -->
@@ -58,7 +50,37 @@
           
     </div>
 </div>
-   
+<div class="bg-1">
+<div class="container">
+  <h2 class="text-white">Best Sellers</h2>
+  <div class="row row-list">
+    
+    {% for best_seller in best_sellers %}
+    <div class="col-lg-3 grid-list-product">
+      <div class="well grid-list-product-inner">
+        
+        {% for image in best_seller.productimage_set.all %}
+        <a href="{% url "product" best_seller.slug %}">
+        <img class="img-thumbnail img-list" src="{{image.thumbnail.url}}" alt="">
+        </a>
+        {% endfor %}
+                  
+        <p class="text-center">{{best_seller.name}}</p>
+        <div class="list-bottom-portion">
+          <p class="text-center"><strong>${{best_seller.price}}</strong></p>
+          <p class="text-center">
+            <a class="btn btn-success" href="{% url 'add_to_basket'%}?product_id={{ object.id }}">Add to basket</a>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+</div>
 {% endblock content %}
     
     

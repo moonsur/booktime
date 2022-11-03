@@ -58,3 +58,59 @@ html, body {
     max-height: 500px;
     width: 100%;
   }
+
+  .navbar{
+    margin-bottom: 2px;
+  }
+
+  .color-blue{
+    color: #2f80ed;
+  }
+
+  .row-list{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-list{
+    width: 100%;
+    height: 250px;
+  }
+
+
+  .grid-list-product{
+    /*height: 420px; */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    
+  }
+
+  .grid-list-product-inner{
+    transition: box-shadow 1s;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -o-transition: box-shadow 1s;
+  }
+  .grid-list-product-inner:hover{
+    box-shadow: 0 5px 20px #736f6f;
+  }
+
+  .bg-1{
+    background: #2d2d30;    
+  }
+  .text-white{
+    color: #fff;
+  }
+  /*
+  .list-bottom-portion{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto
+  }
+  */

@@ -9,6 +9,24 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+class GeneralSettings(models.Model):
+    site_name = models.CharField(max_length=20)
+    logo = models.ImageField(upload_to = 'logo', null = True, blank=True)
+    logo_alt_text = models.CharField(max_length=20, blank=True)
+    show_products_per_page = models.IntegerField(default=6) 
+
+
+    def __str__(self):
+        return "Click here to edit General Settings"
+
+    def clean(self):
+        if (GeneralSettings.objects.count() >= 1 and self.pk is None):
+            raise ValidationError("Can only create single entity.")
+
+    class Meta:
+        verbose_name = 'General Settings'
+        verbose_name_plural = 'General Settings'
+
 class ActiveManager(models.Manager):
     def active(self):
         return self.filter(active=True)
@@ -21,7 +39,7 @@ class ProductTag(models.Model):
     #products = models.ManyToManyField(Product, blank=True)
     name = models.CharField(max_length=30)
     slug = models.SlugField(max_length=35)
-    description =models.TextField(blank=True)
+    description = models.TextField(blank=True)
     active = models.BooleanField(default=True)
 
     objects = ProductTagManager()
@@ -38,6 +56,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     slug = models.SlugField(max_length=50)
     author = models.CharField(max_length=60, default='Unknown')
+    best_seller = models.BooleanField(default=False)
     active = models.BooleanField(default=True)
     in_stock = models.BooleanField(default=True)
     date_updated = models.DateTimeField(auto_now=True)
@@ -268,7 +287,10 @@ class SingleFirstSlideModel(models.Model):
 class HomeSlider(SingleFirstSlideModel):
     image = models.ImageField(upload_to='home-sliders') 
     alt_text = models.CharField(max_length=20)
-    caption_header = models.CharField(max_length=30)  
-    caption_text = models.CharField(max_length=60)  
+    quoted_by = models.CharField(max_length=30)  
+    caption_text = models.CharField(max_length=260)  
     active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.alt_text
     

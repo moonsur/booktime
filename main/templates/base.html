@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<div class="container">
+
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -30,7 +30,7 @@
             <li class="{% if request.path == '/' %}active {% endif %}"><a href="/">Home</a></li>
             <li class="{% if request.path == '/about-us/' %}active {% endif %}"><a href="/about-us/">About Us</a></li>
             <li class="{% if request.path == '/contact-us/' %} active {% endif %}"><a href="{% url 'contact-us' %}">Contact Us</a></li>
-           <li class="{% if request.path == '/products/' %} active {% endif %}"><a href="{% url 'products' tag='All' %}">Products</a></li>
+           <li class="{% if request.path == '/products/' %} active {% endif %}"><a href="{% url 'products' tag='All' %}">Books</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             {% if user.is_authenticated %}
@@ -60,7 +60,7 @@
     
 {% endblock content %}
     
-</div>
+
 {% include 'footer.html' %}
 <!-- JavaScript Bundle with Popper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

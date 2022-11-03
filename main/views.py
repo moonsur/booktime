@@ -15,6 +15,15 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+def home(request):
+    print(1^1)
+    print(1**1)
+    print(2^1)
+    print(2**1)
+    slider = models.HomeSlider.objects.filter(active = True)
+    best_sellers = models.Product.objects.filter(best_seller = True)
+    return render(request, 'home.html',{'slider':slider, 'best_sellers':best_sellers})
+
 class ContactUsForm(FormView):
     #logger.info('contact us view')
     template_name = "contact-us.html"
@@ -37,10 +46,13 @@ def contact_us(request):
         form = forms.ContactForm()
     return render(request, 'contact-us.html', {'form': form})
 
-class ProductListView(ListView):
-   # logger.info('Product List view')
+class ProductListView(ListView):   
     template_name = "main/product_list.html"
-    paginate_by = 5
+    #paginate_by = 6
+
+    def get_paginate_by(self, queryset):   
+        general_settings = models.GeneralSettings.objects.first()           
+        return self.request.GET.get('paginate_by', general_settings.show_products_per_page)
 
     def get_queryset(self):
         tag = self.kwargs['tag']

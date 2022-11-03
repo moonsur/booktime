@@ -22,7 +22,8 @@ from main import models
 
 
 urlpatterns = [   
-    path('',TemplateView.as_view(template_name='home.html'), name='home'),
+    path('',views.home, name='home'),
+    #path('',TemplateView.as_view(template_name='home.html'), name='home'),
     path('about-us/',views.about_us_View, name='about-us'),
     path('contact-us/', views.ContactUsForm.as_view(), name='contact-us'),
     path('products/<slug:tag>/', views.ProductListView.as_view(), name='products'),

@@ -4,8 +4,8 @@ from . import models
 from django.utils.html import format_html
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name','slug','price', 'in_stock', 'active')
-    list_editable = ('in_stock','active')
+    list_display = ('name','slug','price', 'in_stock', 'active', 'best_seller')
+    list_editable = ('in_stock','active','best_seller')
     list_filter = ('active', 'in_stock', 'date_updated')
     search_fields = ('name',)
     prepopulated_fields = {'slug': ('name',)}
@@ -59,6 +59,19 @@ class AboutUsAdmin(admin.ModelAdmin):
 
 admin.site.register(models.AboutUs, AboutUsAdmin)
 
+@admin.register(models.GeneralSettings)
+class GeneralSettingsAdmin(admin.ModelAdmin):
+    #list_display= ('content',)
+
+    def has_add_permission(self, request, obj=None):
+        if (models.GeneralSettings.objects.count() >= 1):
+            return False
+        else:
+            return True
+
+    def has_delete_permission(self, request, obj=None):
+        return False 
+
 @admin.register(models.User)
 class UserAdmin(admin.ModelAdmin):
     fieldsets =(
@@ -104,3 +117,17 @@ class BasketAdmin(admin.ModelAdmin):
     list_editable = ('status',)   
     list_filter = ('status',)
     inlines = (BasketLineInline,) 
+
+@admin.register(models.HomeSlider)
+class HomeSliderAdmin(admin.ModelAdmin):
+    list_display = ('image_show','alt_text', 'active', 'first_slide')
+    list_editable = ('active', 'first_slide') 
+    list_filter = ('active', 'first_slide')  
+
+    def image_show(self, obj):
+        if obj.image:
+            return format_html(
+                '<img width="300" height="200" src = "%s"/>' % obj.image.url
+            )
+        else:
+            return "-" 
